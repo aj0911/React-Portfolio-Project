@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins; 
+    text-decoration: none;
+    list-style-type: none;
+    user-select: none;
+}
+
+
+:root{
+    --background-body:#1B1B33;
+    --background-light:#4AB3F4;
+    --background-dark:#292B66;
+
+    --transition:all .6s;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 0 10%;
+}
+
+body{
+    background-color: var(--background-body);
+    background-image: url('./assets/bg-texture.png');
+    overflow-x: hidden;
+}
+
+Section .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -.2rem;
+    flex-direction: column;
+}
+Section .title h5{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+Section .title h3{
+    color: var(--background-light);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: -15px;
+    font-size: 3rem;
+}
+
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    Section .title h3{
+        font-size: 1.5rem;
+    }
+    Section .title h5{
+        font-size: .7rem;
+        margin: 10px;
+    }
+}

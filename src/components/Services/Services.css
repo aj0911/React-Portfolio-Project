@@ -1,0 +1,78 @@
+#Services{
+    padding-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+#Services .services{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+#Services .services .service{
+    background-color: var(--background-dark);
+    margin: 10px;
+    padding-bottom: 20px;
+    border-radius:  0 0 20px 20px;
+    border: 1px solid var(--background-light);
+    transition: var(--transition);
+    width: 30%;
+}
+
+#Services .services .service:hover{
+    background-color: transparent;
+}
+
+#Services .services .service .name{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-light);
+    border-radius: 0 0 20px 20px;
+    
+}
+#Services .services .service .name h2{
+    font-weight: 600;
+    font-size: .8em;
+}
+
+#Services .services .service .about{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#Services .services .service .about .tick{
+    display: flex;
+    color: var(--background-light);
+    gap: 1rem;
+    padding: 5px;
+    width: 100%;
+}
+#Services .services .service .about .tick p{
+    color: white;
+    width: 90%;
+}
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+    #Services .services .service{
+        width: 100%;
+    }
+    #Services .services .service .about .tick p{
+        width: 100%;
+        
+    }
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    #Services .services .service .about .tick p{
+        font-size: .8rem;
+    }
+    #Services .services .service .about .tick .name{
+        font-size: 1rem;
+    }
+}
+

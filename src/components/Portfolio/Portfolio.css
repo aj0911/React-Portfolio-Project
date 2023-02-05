@@ -1,0 +1,76 @@
+#Portfolio{
+    padding-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+#Portfolio .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Portfolio .projects .project{
+    background-color: var(--background-dark);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 25px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    border: .1px solid var(--background-dark);
+    transition: var(--transition);
+}
+#Portfolio .projects .project:hover{
+    border: .1px solid var(--background-light);
+    background-color: transparent;
+}
+
+#Portfolio .projects .project img{
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+#Portfolio .projects .project h3{
+    color: white;
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+#Portfolio .projects .project .cta a{
+    padding: 10px 20px;
+    font-size: .8rem;
+}
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+    #Portfolio .projects .project{
+        width: 45%;
+    }
+    #Portfolio .projects .project h3 {
+        font-size: .9rem;
+    }
+    #Portfolio .projects .project .cta a{
+        padding: 5px 10px;
+    }
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    #Portfolio .projects .project {
+        width: 100%;
+    }
+    #Portfolio .projects .project h3 {
+        font-size: .7rem;
+    }
+    #Portfolio .projects .project .cta a {
+        padding: 3px 5px;
+    }
+}

@@ -1,0 +1,136 @@
+#Contact{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 3rem;
+}
+
+#Contact .main-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 3rem;
+}
+#Contact .main-body .right{
+    width: 50%;
+}
+#Contact .main-body .right form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+#Contact .main-body .right form input[type="text"],#Contact .main-body .right form input[type="email"],#Contact .main-body .right form textarea{
+    font-weight: 500;
+    font-size: .9rem;
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid var(--background-light);
+    border-radius: 10px;
+    color: var(--background-light);
+    resize: none;
+}
+#Contact .main-body .right form input[type="text"],#Contact .main-body .right form input[type="email"],#Contact .main-body .right form textarea:focus{
+    outline: none;
+}
+#Contact .main-body .right form input[type="submit"]{
+    background: var(--background-light);
+    border: none;
+    color: var(--background-dark);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+    transition:var(--transition);
+    cursor: pointer;
+}
+#Contact .main-body .right form input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+#Contact .main-body .right form textarea{
+    height: 30%;
+    height: 150px;
+}
+#Contact .main-body .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+#Contact .main-body .left .box{
+    color: white;
+    background-color: var(--background-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    border-radius: 25px;
+    width: 60%;
+    transition: var(--transition);
+}
+#Contact .main-body .left .box:hover{
+    transform: scale(1.05);
+}
+#Contact .main-body .left .box svg{
+    font-size: 1.8rem;
+}
+#Contact .main-body .left .box h3{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#Contact .main-body .left .box p{
+    font-size: .9rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+    word-break: break-all;
+}
+
+#Contact .main-body .left .box a{
+    color: var(--background-light);
+}
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+    #Contact .main-body{
+        flex-direction: column;
+    }
+    #Contact .main-body .left,#Contact .main-body .right{
+        width: 100%;
+    }
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    #Contact .main-body .left .box {
+        padding: 20px 30px;
+        width: 100%;
+    }
+    #Contact .main-body .left .box svg{
+        font-size: 1.5rem;
+    }
+    #Contact .main-body .left .box h3{
+        font-size: 1rem;
+    }
+    #Contact .main-body .left .box p{
+        font-size: .8rem;
+    }
+    #Contact .main-body .left .box a{
+        font-size: .8rem;
+    }
+    #Contact .main-body .right form input[type="text"],#Contact .main-body .right form input[type="email"],#Contact .main-body .right form textarea{
+        font-size: .8rem;
+    }
+    #Contact .main-body .right form input[type="submit"]{
+        font-size: .7rem;
+    }
+}

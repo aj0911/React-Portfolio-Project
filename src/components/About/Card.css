@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-dark);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid var(--background-dark);
+    transition: var(--transition);
+}
+.card:hover{
+    background-color: transparent;
+}
+.card .icon{
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--background-light);
+}
+.card .text{
+    text-align: center;
+}
+.card .text h3{
+    font-size: 1rem;
+    margin-bottom: -15px;
+}
+.card .text p{
+    font-size: .7rem;
+    font-weight: 200;
+}

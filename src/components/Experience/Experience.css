@@ -1,0 +1,79 @@
+/* css for tag */
+.tag{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+.tag .icon{
+    color: var(--background-light);
+}
+.tag .skill-name h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.tag .skill-name h5{
+    font-size: .9rem;
+    font-weight: 200;
+}
+/* css for skill */
+.skill{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-dark);
+    padding: 20px 80px;
+    border-radius: 20px ;
+    margin: 10px;
+    border: 2px solid var(--background-dark);
+    transition: var(--transition);
+}
+.skill:hover {
+    background-color: transparent;
+    
+}
+.skill .text{
+    color: var(--background-light);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skill .tags ul{
+    align-items: center;
+    column-gap: 3rem;
+    column-count: 2;
+
+}
+
+.skill .tags ul li{
+    padding: 15px;
+}
+
+.skills{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Experience{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+    .skill{
+        width: 100%;
+    }
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    .skill .tags ul{
+        column-count: 1;
+    }
+}

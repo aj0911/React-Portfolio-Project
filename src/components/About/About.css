@@ -1,0 +1,100 @@
+#About .container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+#About .about-body{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+#About .about-body .left{
+    width: 35%;
+    background-color: var(--background-light);
+    border-radius: 20px;
+}
+#About .about-body .left img{
+    width: 100%;
+    object-fit: cover;
+    transform: rotate(7deg) translate3d(0,0,10px);
+    border-radius: 20px;
+    transition: var(--transition);
+}
+#About .about-body .left:hover img{
+    transform: rotate(0deg)
+}
+#About .about-body .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+#About .about-body .right .cards{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#About .about-body .right .cards .card{
+    margin :10px;
+}
+#About .about-body .right p{
+    margin: 20px 0;
+    font-weight: 300;
+    color: white;
+}
+
+#About .about-body .right a{
+    background-color: var(--background-light);
+    color: var(--background-dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border:2px solid var(--background-light);
+    transition: var(--transition);
+}
+#About .about-body .right a:hover{
+    background-color: transparent;
+    color: var(--background-light);
+}
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+    #About .about-body .left{
+        width: 70%;
+    }
+    #About .about-body .right{
+        width: 100%;
+        align-items: center;
+    }
+    #About .about-body .right .cards{
+        justify-content: center;
+    }
+    #About .about-body .right p{
+        text-align: center;
+    }
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    #About .about-body{
+        gap: 3rem;
+    }
+    #About .about-body .right p{
+        font-size: .7rem;
+    }
+    #About .about-body .right a {
+        font-size: .7rem;
+        padding: 7px 10px;
+    }
+}

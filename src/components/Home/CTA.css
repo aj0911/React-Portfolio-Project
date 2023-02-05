@@ -1,0 +1,25 @@
+.cta{
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+}
+.cta a{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: var(--transition);
+}
+.cta a:hover{
+    transform: scale(1.05);
+}
+.cta a:first-child{
+    color: var(--background-light);
+    border: 2px solid var(--background-light);
+}
+
+.cta a:last-child{
+    color: var(--background-dark);
+    background-color: var(--background-light);
+    border: 2px solid var(--background-light);
+}

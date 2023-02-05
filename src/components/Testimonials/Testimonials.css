@@ -1,0 +1,68 @@
+#Testimonials{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+#Testimonials .testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-bottom: 2rem;
+}
+#Testimonials .testimonials .testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:50px;
+    color: white;
+    background-color: var(--background-dark);
+    transition: var(--transition);
+    border-radius: 20px;
+    margin: 10px;
+}
+#Testimonials .testimonials .testimonial img{
+    width: 15%;
+    border: 2px solid var(--background-light);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#Testimonials .testimonials .testimonial h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#Testimonials .testimonials .testimonial p{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+/* =================For Tablet Screen======================= */
+@media screen and (max-width:1000px) {
+    #Testimonials .testimonials{
+        width: 100%;
+    }
+}
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    #Testimonials .testimonials .testimonial img{
+        width: 40%;
+    }
+    #Testimonials .testimonials .testimonial{
+        padding: 50px 10px;
+    }
+    #Testimonials .testimonials .testimonial h3{
+        font-size: .9rem;
+    }
+    #Testimonials .testimonials .testimonial p{
+        font-size: .7rem;
+    }
+}

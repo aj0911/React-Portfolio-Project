@@ -1,0 +1,110 @@
+#Home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#Home .left-icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Home .left-icons a{
+    color: var(--background-light);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+#Home .right a{
+    color: var(--background-light);
+    font-size: 1.2rem;
+}
+#Home .left-icons a:hover{
+    transform: scale(1.5);
+}
+#Home .right{
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
+    transform: rotate(90deg);
+    color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s; 
+}   
+#Home .right:hover{
+    font-weight: 900;
+}
+#Home .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Home .home .text-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+}
+#Home .home .text-intro h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#Home .home .text-intro h1{
+    font-size: 3rem;
+}
+#Home .home .text-intro h6{
+    font-size: 1rem;
+    font-weight: 300;
+}
+#Home .home .img-me{
+    overflow: hidden;
+    background:linear-gradient(15deg,transparent,var(--background-light)) ;
+    border-radius: 50% 50% 0 0;
+    height: 300px;
+    padding: 0 10%;
+}
+#Home .home .img-me:hover{
+    overflow: visible;
+}
+#Home .home .img-me img:hover{
+    transform: scale(1.6);
+}
+#Home .home .cta{
+    margin-bottom:40px;
+    justify-content: center;
+    align-items: center;
+}
+#Home .home .img-me img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transform: translate(-15%,23%) scale(1.5);
+    transition: var(--transition);
+}
+
+/* =================For Mobile Screen======================= */
+@media screen and (max-width:600px) {
+    #Home .left-icons, #Home .right{
+        display: none;
+    }
+    #Home .home .text-intro h5{
+        font-size: .9rem;
+    }
+    #Home .home .text-intro h1{
+        font-size: 1.5rem;
+    }
+    #Home .home .text-intro h6{
+        font-size: .7rem;
+    }
+}
